@@ -2,12 +2,12 @@
 
 /**
  * Plugin Name:       Genie Plugin Example
- * Plugin URI:        https://lnk7.com/plugins/genie/
+ * Plugin URI:        https://geniepress.org
  * Description:       An Example Plugin Using the GeniePress Framework
- * Version:           0.1.1
+ * Version:           1.0.0
  * Requires at least: 5.5
  * Author:            Sunil Jaiswal
- * Author URI:        https://lnk7.com/
+ * Author URI:        https://geniepress.org
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       lnk7-genie-plugin
