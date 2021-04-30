@@ -1,0 +1,15 @@
+{
+  "name": "geniepress/plugin",
+  "description": "A sample plugin using the GeniePress framework",
+  "license": "MIT",
+  "require": {
+    "geniepress/framework": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Plugin\\": "src/php"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
