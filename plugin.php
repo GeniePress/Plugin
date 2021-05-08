@@ -19,7 +19,7 @@ namespace Plugin;
 use Plugin\PostTypes\Page;
 use Plugin\PostTypes\Post;
 use Plugin\PostTypes\Testimonial;
-use Lnk7\GeniePress\Genie;
+use GeniePress\Genie;
 
 include_once('vendor/autoload.php');
 

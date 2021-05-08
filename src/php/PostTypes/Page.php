@@ -3,7 +3,7 @@
 namespace Plugin\PostTypes;
 
 
-use Lnk7\GeniePress\Abstracts\CustomPost;
+use GeniePress\Abstracts\CustomPost;
 
 class Page extends CustomPost
 {

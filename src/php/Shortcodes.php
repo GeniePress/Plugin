@@ -2,10 +2,10 @@
 
 namespace Plugin;
 
-use Lnk7\GeniePress\AjaxHandler;
-use Lnk7\GeniePress\Interfaces\GenieComponent;
-use Lnk7\GeniePress\Utilities\AddShortcode;
-use Lnk7\GeniePress\View;
+use GeniePress\AjaxHandler;
+use GeniePress\Interfaces\GenieComponent;
+use GeniePress\Utilities\AddShortcode;
+use GeniePress\View;
 
 class Shortcodes implements GenieComponent
 {
