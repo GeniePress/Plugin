@@ -2,12 +2,12 @@
 
 namespace Plugin;
 
-use Lnk7\GeniePress\AjaxHandler;
-use Lnk7\GeniePress\Interfaces\GenieComponent;
-use Lnk7\GeniePress\Utilities\AddShortcode;
-use Lnk7\GeniePress\Utilities\HookInto;
-use Lnk7\GeniePress\Utilities\RegisterAjax;
-use Lnk7\GeniePress\View;
+use GeniePress\AjaxHandler;
+use GeniePress\Interfaces\GenieComponent;
+use GeniePress\Utilities\AddShortcode;
+use GeniePress\Utilities\HookInto;
+use GeniePress\Utilities\RegisterAjax;
+use GeniePress\View;
 use Plugin\Exceptions\ThemeException;
 
 class Plugin implements GenieComponent

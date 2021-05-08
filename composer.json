@@ -1,6 +1,8 @@
 {
   "name": "geniepress/plugin",
   "description": "A sample plugin using the GeniePress framework",
+  "keywords": ["framework", "wordpress", "plugin"],
+  "type": "project",
   "license": "MIT",
   "require": {
     "geniepress/framework": "^1.0"
