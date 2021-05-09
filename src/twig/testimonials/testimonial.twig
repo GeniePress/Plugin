@@ -1,6 +1,6 @@
-<blockquote>
+<blockquote xmlns="http://www.w3.org/1999/html">
     <img src="{{ testimonial.featuredImage('thumbnail').url }}"/>
-    <h3{{ testimonial.post_title }}</p>
+    <h3{{ testimonial.post_title }}</h3>
     <p>{{ testimonial.post_content|wpautop }}</p>
     <footer>—{{ testimonial.name }}, <cite>{{ locations[testimonial.location] }}</cite></footer>
 </blockquote>

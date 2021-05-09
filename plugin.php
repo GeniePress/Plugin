@@ -16,19 +16,32 @@
 
 namespace Plugin;
 
+use GeniePress\Genie;
 use Plugin\PostTypes\Page;
 use Plugin\PostTypes\Post;
+use Plugin\PostTypes\Sample;
 use Plugin\PostTypes\Testimonial;
-use GeniePress\Genie;
 
 include_once('vendor/autoload.php');
 
 Genie::createPlugin()
+    ->enableAjaxHandler()
+    ->enableApiHandler()
+    ->enableBackgroundJobs()
+    ->enableCacheBuster()
+    ->enableDeploymentHandler()
     ->withComponents([
+
+        // Our main Plugin
         Plugin::class,
+
+        // Our Post Types
         Post::class,
         Page::class,
         Testimonial::class,
+        Sample::class,
+
+        // utilities
         Shortcodes::class,
     ])
     ->start();
