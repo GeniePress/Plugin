@@ -26,13 +26,12 @@ class Shortcodes implements GenieComponent
 			});
 
 		/**
-		 * Add a shortcode that fires the test ajax endpoint
+		 * Add a shortcode that shows an endpoint
 		 */
 		AddShortcode::called('test')->run(function () {
-			return View::with('shortcode/test.twig')
+			return View::with('shortcodes/test.twig')
 				->addVar('endpoint', AjaxHandler::generateUrl('test'))
 				->render();
-
 		});
 
 	}
