@@ -4,7 +4,6 @@ namespace Plugin\PostTypes;
 
 use Exception;
 use GeniePress\Abstracts\CustomPost;
-use GeniePress\Debug;
 use GeniePress\Fields\SelectField;
 use GeniePress\Fields\TextField;
 use GeniePress\Utilities\AddShortcode;
@@ -47,6 +46,8 @@ class Testimonial extends CustomPost
         'fr' => 'France',
     ];
 
+    protected static $triggerSave = false;
+
 
 
     /**
@@ -73,7 +74,10 @@ class Testimonial extends CustomPost
             ->withFields([
                 TextField::called('name')
                     ->required(true)
-                    ->wrapperWidth(50),
+                    ->wrapperWidth(50)
+                    ->formatValue(function ($value, $post_id, $field) {
+                        return "<pre>".$value."</pre>";
+                    }),
                 SelectField::called('location')
                     ->choices(static::$locations)
                     ->default('london')
@@ -107,7 +111,7 @@ class Testimonial extends CustomPost
          */
         RegisterApi::get('testimonials')
             ->run(function () {
-                return static::get()->toArray();
+                return static::get();
             });
 
         /**
@@ -203,7 +207,7 @@ class Testimonial extends CustomPost
      *
      * @throws Exception
      */
-    public function checkValidity()
+    protected function checkValidity() : void
     {
 
         if ( ! $this->post_title) {

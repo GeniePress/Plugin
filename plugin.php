@@ -30,6 +30,7 @@ Genie::createPlugin()
     ->enableBackgroundJobs()
     ->enableCacheBuster()
     ->enableDeploymentHandler()
+    ->setHookPrefix('testimonials/')
     ->withComponents([
 
         // Our main Plugin

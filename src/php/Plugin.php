@@ -4,8 +4,11 @@ namespace Plugin;
 
 use GeniePress\Fields\DateField;
 use GeniePress\Fields\DateTimeField;
+use GeniePress\Genie;
 use GeniePress\Interfaces\GenieComponent;
+use GeniePress\Utilities\CreateTaxonomy;
 use GeniePress\Utilities\HookInto;
+use Plugin\PostTypes\Testimonial;
 
 class Plugin implements GenieComponent
 {
@@ -19,6 +22,7 @@ class Plugin implements GenieComponent
             ->run(function () {
                 wp_enqueue_script('jquery');
             });
+
 
         /**
          * Override the date format
